@@ -110,7 +110,13 @@ for line in dataframe_client.itertuples() :
         if line.clientType == "Ecommerce":  
             listTableSchema = [GA4ecommerceTableSchemaFile,GA4TableSchemaFile, GA4eventTableSchemaFile]
             listTableName = [GA4_ECOMMERCE_TABLE_NAME, GA4Table_name, GA4_EVENT_TABLE_NAME]         
-            for tableSchema, tableName in zip(listTableSchema, listTableName):
+            
+        else :
+            listTableSchema = [GA4TableSchemaFile, GA4eventTableSchemaFile]
+            listTableName = [GA4Table_name, GA4_EVENT_TABLE_NAME]         
+
+
+        for tableSchema, tableName in zip(listTableSchema, listTableName):
                 tableSchemaFile = tableSchema
                 with open(tableSchemaFile) as f:
                     tableSchemaFileData = json.loads(f.read())
@@ -119,20 +125,7 @@ for line in dataframe_client.itertuples() :
                 dataframe = get_data_from_ga4_for_client(clientId, table_id, gatoken, tableSchemaFileData, startDate,  endDate, logger, line, dataframe_client)           
                 #fonction to create table if doesn't exist
                 create_bigquery_table_with_logs(tableSchemaFileData,database_id,table_id,GOOGLE_APPLICATION_CREDENTIALS,project_id, logger)
-                push_data_into_table(dataframe,tableSchemaFileData,table_id,GOOGLE_APPLICATION_CREDENTIALS,project_id,logger,line,database_id,dataframe_client)
-        else :
-            listTableSchema = [GA4TableSchemaFile, GA4eventTableSchemaFile]
-            listTableName = [GA4Table_name, GA4_EVENT_TABLE_NAME]         
-            for tableSchema, tableName in zip(listTableSchema, listTableName):
-                tableSchemaFile = tableSchema
-                with open(tableSchemaFile) as f:
-                    tableSchemaFileData = json.loads(f.read())
-                table_id = '{}.{}.{}'.format(project_id, database_id, tableName)   
-                #fonction to get data from ga4     
-                dataframe = get_data_from_ga4_for_client(line.clientId, table_id, gatoken, tableSchemaFileData, startDate,  endDate, logger, line, dataframe_client)           
-                #fonction to create table if doesn't exist
-                create_bigquery_table_with_logs(tableSchemaFileData,database_id,table_id,GOOGLE_APPLICATION_CREDENTIALS,project_id, logger)
-                push_data_into_table(dataframe,tableSchemaFileData,table_id,GOOGLE_APPLICATION_CREDENTIALS,project_id,logger,line,database_id,dataframe_client)
+                push_data_into_table(dataframe,tableSchemaFileData,table_id,GOOGLE_APPLICATION_CREDENTIALS,project_id,logger,line,database_id,dataframe_client) 
     elif source == 'GA3' :
         if df_client_goals_unique.empty :
             logger.info('0 goals for this client on GA3')
