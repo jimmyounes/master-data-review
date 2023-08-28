@@ -1,0 +1,46 @@
+
+{
+    "dimensions":
+    [
+        {
+            "name": "source", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "clientName", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "clientId", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "clientType", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "historicalDate", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },   
+        {
+            "name": "state", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "lastUpdate", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name": "status", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }
+    ]
+}

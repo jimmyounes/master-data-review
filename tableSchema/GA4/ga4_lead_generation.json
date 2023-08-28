@@ -1,0 +1,93 @@
+{
+    "dimensions":
+    [
+        {
+            "name": "contentId",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"date",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"landingPage",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"sessionCampaignName",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"sessionDefaultChannelGroup",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"sessionGoogleAdsKeyword",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"sessionSourceMedium",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"sessionSourcePlatform",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }
+    ],
+    "metrics":
+    [
+        {
+            "name":"bounceRate",
+            "type": "FLOAT64", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"conversions",
+            "type": "INTEGER", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"engagedSessions",
+            "type": "INTEGER", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"newUsers",
+            "type": "INTEGER", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"sessions",
+            "type": "INTEGER", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"totalRevenue",
+            "type": "FLOAT64", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"totalUsers",
+            "type": "INTEGER", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"transactions",
+            "type": "INTEGER", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"userEngagementDuration",
+            "type": "FLOAT64", 
+            "mode": "NULLABLE"
+        }
+    ]
+}

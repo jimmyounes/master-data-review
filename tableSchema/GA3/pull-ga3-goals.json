@@ -1,0 +1,50 @@
+
+{
+    "dimensions":
+    [
+        {
+            "name": "ga:date", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "ga:adContent", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "ga:adwordsCreativeID", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "ga:campaign", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "ga:keyword", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "ga:landingPagePath", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "ga:medium", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "ga:source", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }
+    ],
+    "metrics": 
+    [
+
+    ]
+}

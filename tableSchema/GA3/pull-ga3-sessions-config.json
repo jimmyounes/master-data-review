@@ -1,0 +1,79 @@
+
+{
+    "dimensions":
+    [
+        {
+            "name": "ga:date", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "ga:adContent", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "ga:adwordsCreativeID", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "ga:campaign", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "ga:keyword", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "ga:landingPagePath", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "ga:medium", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "ga:source", 
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }
+    ],
+    "metrics": 
+    [
+        {
+            "name": "ga:bounces", 
+            "type": "INTEGER", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "ga:goalCompletionsAll", 
+            "type": "INTEGER", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name": "ga:sessionDuration", 
+            "type": "FLOAT64", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "ga:sessions", 
+            "type": "INTEGER", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "ga:transactionRevenue", 
+            "type": "FLOAT64", 
+            "mode": "NULLABLE"
+        }, 
+        {
+            "name": "ga:transactions", 
+            "type": "INTEGER", 
+            "mode": "NULLABLE"
+        }
+    ]
+}

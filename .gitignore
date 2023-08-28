@@ -1,0 +1,5 @@
+.env
+credentials/
+logging_.log
+__pycache__
+To_ignore

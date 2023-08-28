@@ -1,0 +1,93 @@
+{
+    "dimensions":
+    [
+        {
+            "name": "contentId",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"date",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"landingPage",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"sessionCampaignName",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"sessionDefaultChannelGroup",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"sessionGoogleAdsKeyword",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"sessionSourceMedium",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"sessionSourcePlatform",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }
+    ],
+    "metrics":
+    [
+        {
+            "name":"ecommercePurchases",
+            "type": "INTEGER", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"addToCarts",
+            "type": "INTEGER", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"checkouts",
+            "type": "INTEGER", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"totalPurchasers",
+            "type": "INTEGER", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"firstTimePurchasers",
+            "type": "INTEGER", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"averagePurchaseRevenue",
+            "type": "FLOAT64", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"totalRevenue",
+            "type": "FLOAT64", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"cartToViewRate",
+            "type": "FLOAT64", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"purchaseToViewRate",
+            "type": "FLOAT64", 
+            "mode": "NULLABLE"
+        }
+    ]
+}

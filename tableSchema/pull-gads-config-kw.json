@@ -1,0 +1,48 @@
+{
+    "dimensions":
+    [
+        {
+            "name": "campaign.id",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"campaign.name",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"ad_group.id",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"ad_group.name",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"ad_group_criterion.criterion_id",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }
+    ],
+    "metrics":
+    [
+        {
+            "name":"metrics.impressions",
+            "type": "INTEGER", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"metrics.clicks",
+            "type": "INTEGER", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"metrics.cost_micros",
+            "type": "FLOAT64", 
+            "mode": "NULLABLE"
+        }  
+    ]
+}

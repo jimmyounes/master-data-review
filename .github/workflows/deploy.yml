@@ -1,0 +1,29 @@
+name: ci
+
+on:
+  push:
+    branches: main
+
+jobs:
+  login:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Login to GAR
+        uses: docker/login-action@v2
+        with:
+          registry: europe-west2-docker.pkg.dev
+          username: _json_key
+          password: ${{ secrets.GCP_CREDENTIALS }}
+
+      - name: Get tag
+        id: get-tag
+        run: echo ::set-output name=short_ref::${GITHUB_REF#refs/*/}
+
+      - id: docker-push-tagged
+        name: Tag Docker image and push to Google Artifact Registry
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: |
+             europe-west2-docker.pkg.dev/testsolene/master-data/testsolene:${{ steps.get-tag.outputs.short_ref }}
+             europe-west2-docker.pkg.dev/testsolene/master-data/testsolene:latest

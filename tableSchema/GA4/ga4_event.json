@@ -1,0 +1,49 @@
+{
+    "dimensions":
+    [
+        {
+            "name":"date",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"eventName",
+            "type": "STRING", 
+            "mode": "NULLABLE"
+        }
+    ],
+    "metrics":
+    [
+        {
+            "name":"eventsPerSession",
+            "type": "FLOAT64", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"eventCount",
+            "type": "INTEGER", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"eventValue",
+            "type": "FLOAT64", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"eventCountPerUser",
+            "type": "FLOAT64", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"conversions",
+            "type": "INTEGER", 
+            "mode": "NULLABLE"
+        },
+        {
+            "name":"conversions:purchase",
+            "type": "INTEGER", 
+            "mode": "NULLABLE"
+        }
+
+    ]
+}
